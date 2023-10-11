@@ -37,4 +37,9 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+jar{
+	manifest {
+		attributes('PrimeraApiRestApplication': 'com.Api.demo')
+	}
+}
 
